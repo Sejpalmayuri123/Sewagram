@@ -1,0 +1,182 @@
+.container > input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(238, 154, 123);
+    border: 2px solid orangered;
+    color: black;
+    font-weight: bold;
+  }
+  
+/* position the close button */
+  
+  .container {
+    padding: 30px;
+  }
+  
+ 
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 70%; /* Could be more or less, depending on screen size */
+    border: 1px solid gray;
+  }
+  
+  
+   /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) 
+    {
+       .cancelbtn
+     {
+       width: 100%;
+    }
+  }
+        
+
+
+
+        .log
+         {
+             width: 30%;
+             background: rgba(192, 123, 123, 0.815);
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: bold;
+             padding: 20px;
+             margin: 0 auto;
+             text-align: center;
+             color: rgba(124, 5, 5, 0.815);
+         }
+         @media(max-width:800px)
+         {
+             .log
+             {
+                 width: 70%;
+             }
+         }
+        
+        #regForm {
+          background-color: rgba(192, 123, 123, 0.815);
+          margin: 40px auto;
+          font-family: Raleway;
+          padding: 40px;
+          width: 70%;
+          min-width: 300px;
+        }
+        
+        h1 {
+          text-align: center; 
+          color: rgba(124, 5, 5, 0.815); 
+        }
+        
+        input,select {
+          padding: 10px;
+          width: 100%;
+          font-size: 17px;
+          font-family: Raleway;
+          border: 1px solid #aaaaaa;
+          outline: none;
+        }
+        input[type="file"]
+        {
+            border: 2px solid white;
+            background: #fff;
+        }
+        
+        /* Mark input boxes that gets an error on validation: */
+        input.invalid {
+          background-color: #ffdddd;
+        }
+        
+        /* Hide all steps by default: */
+        .tab {
+          display: none;
+        }
+        
+        button {
+          background-color: rgba(124, 5, 5, 0.815);
+          color: #ffffff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 17px;
+          font-family: Raleway;
+          cursor: pointer;
+          outline: none;
+        }
+        button:hover 
+        {
+          opacity: 0.8;
+        }
+        
+        #prevBtn {
+          background-color: #bbbbbb;
+        }
+        
+        /* Make circles that indicate the steps of the form: */
+        .step {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbbbbb;
+          border: none;  
+          border-radius: 50%;
+          display: inline-block;
+          opacity: 0.5;
+        }
+        
+        .step.active {
+          opacity: 1;
+        }
+        
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+          background-color: rgba(124, 5, 5, 0.815);
+        }
+        .input-container {
+         display: -ms-flexbox; /* IE10 */
+          display: flex;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+    

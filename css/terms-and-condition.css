@@ -1,0 +1,21 @@
+.box
+{
+    margin: 0px auto;
+    width: 85%;
+    background: whitesmoke;
+    padding: 15px;
+    border: 3px solid rgba(124, 5, 5, 0.815);
+}
+.box ol li
+{
+    color: black;
+    font-size: 17px;
+}
+.box ol
+{
+    margin-bottom: 10px;
+}
+.box
+{
+    margin-bottom: 8px;
+}
